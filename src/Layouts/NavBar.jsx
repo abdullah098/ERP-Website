@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import logo from '../Assets/Group 2070.svg';
 
 const NavBar = () => {
     return (
         <>
-            <nav class="nav nav_style d-flex justify-content-between">
+            <nav className="nav nav_style d-flex justify-content-between">
                 <div className="logo d-flex">
-                    <img src={logo} alt="" srcset="" />
+                    <img src={logo} alt="" />
                     <p className="fw-bold">Prism</p>
                 </div>
 

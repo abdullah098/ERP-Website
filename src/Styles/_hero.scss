@@ -1,0 +1,77 @@
+@import "./variables";
+
+.hero {
+    background: transparent url("../Assets/Component\ 40\ –\ 1.svg") 0% 0% no-repeat padding-box;
+    background-size: cover;
+    height: 769px;
+
+    .hero-content {
+        margin-top: 130px;
+        .best-solution {
+            // padding-top: 138px;
+            width: 844px;
+            height: 157px;
+
+            p {
+                font-size: 16px;
+                color: $text-color;
+            }
+            h1 {
+                font-size: 40px;
+                margin-bottom: 16px;
+                color: $text-color;
+            }
+            h4 {
+                font-size: 20px;
+                color: #f8ff20;
+                margin-bottom: 8px;
+            }
+        }
+
+        .div-button {
+            margin-top: 24px;
+            width: 844px;
+
+            .button-demo {
+                width: 209px;
+                height: 42px;
+                background: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 2px;
+                margin-right: 16px;
+                color: $nav-bg;
+                font-size: 16px;
+            }
+
+            .button-works {
+                width: 175px;
+                height: 42px;
+                background: transparent;
+                border: 1px solid #ffffff;
+                border-radius: 2px;
+                font-size: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 25px;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .div-vid {
+            // position: relative;
+            margin-top: 48px;
+            width: 792px;
+            height: 501px;
+            border-radius: 12px;
+
+            img {
+                width: 792px;
+                height: 501px;
+                border-radius: 12px;
+            }
+        }
+    }
+}

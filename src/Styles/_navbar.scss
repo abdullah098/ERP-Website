@@ -1,0 +1,40 @@
+@import "./variables";
+
+.nav_style {
+    background: $nav-bg;
+    height: 79px;
+    padding-left: 106px;
+    padding-right: 100px;
+    padding-top: 16px;
+    padding-bottom: 21px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    a {
+        width: 44px;
+        height: 22px;
+        color: $text-color;
+        font-size: 16px;
+        text-decoration: none;
+        padding-right: 53px;
+        padding-top: 27px;
+        padding-bottom: 30px;
+    }
+
+    
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        color: $text-color;
+        margin-top: 7px;
+    }
+
+    button {
+        width: 146px;
+        height: 42px;
+        font-size: 16px;
+    }
+}

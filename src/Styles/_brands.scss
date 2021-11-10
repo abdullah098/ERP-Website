@@ -1,0 +1,13 @@
+.brands {
+    margin-top: 220.94px;
+    background: #F8FBFF;
+    height: 167px;
+    padding-right: 205px;
+    padding-left: 204px;
+    padding-top: 32px;
+    padding-bottom: 31px;
+
+    .brand-image:not(:last-child) {
+        margin-right: 135px;
+    }
+}

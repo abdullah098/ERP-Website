@@ -1,0 +1,24 @@
+.ant-tabs-tab{
+    padding: 0;
+}
+
+.ant-tabs-tab-btn{
+    
+    padding: 10px 9px 9px 9px !important;
+    color: #C9C9C9 ;
+    font-size: 16px !important;
+    border-radius: 4px !important;
+    // background: white;
+}
+
+.ant-tabs-tab-active{
+    
+    background: #FFFFFF !important;
+    color: #1760A6 ; 
+    font-weight: bold;
+    border-radius: 4px !important;
+}
+
+.ant-tabs-nav::before{
+    border-bottom: none !important;
+}

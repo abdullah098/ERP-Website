@@ -37,7 +37,7 @@ const Solution = () => {
 
                     <div className="row">
                         {cards.map((card, index) => (
-                            <div className="col-4">
+                            <div className="col-4" key={index}>
                                 <Card 
                                     title={card.title}
                                     description={card.description}

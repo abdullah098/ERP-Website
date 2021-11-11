@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../Assets/Group 2070.svg';
 
 const NavBar = () => {
     return (
         <>
             <nav className="nav nav_style d-flex justify-content-between">
-                <div className="logo d-flex">
+                <div className="logo d-flex justify-content-baseline">
                     <img src={logo} alt="" />
                     <p className="fw-bold">Prism</p>
                 </div>
@@ -19,7 +19,9 @@ const NavBar = () => {
                         </NavLink>
                     </div>
                     <div>
-                        <a href="a">About Us</a>
+                        <NavLink to="/aboutUs">
+                            About Us
+                        </NavLink>
                     </div>
                     <div>
                         <a href="a">Feature</a>

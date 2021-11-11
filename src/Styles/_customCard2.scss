@@ -1,0 +1,31 @@
+.custom-card2 {
+    width: 263px;
+    height: 266px;
+    padding: 0;
+
+    .card-image {
+        width: 84px;
+        height: 84px;
+        background: #f5f5f5;
+        padding : 0px;
+        margin-bottom: 16px;
+
+        img {
+            width: 84px;
+            height: 84px;
+        }
+
+        
+    }
+    h4{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+        color: #747474;
+    }
+    a{
+        text-decoration: none;
+    }
+
+}

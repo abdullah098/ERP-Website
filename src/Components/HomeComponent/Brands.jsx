@@ -9,7 +9,7 @@ const Brands = () => {
     const brands = [tv5, martin, viva, falken];
     return ( 
         <>
-            <div className="brands border border-primary text-center ">
+            <div className="brands  text-center ">
                 {brands.map(brand => ( 
                     <img className="brand-image" width={150} src={brand} alt="brand" key={brand}/>
                 ))}

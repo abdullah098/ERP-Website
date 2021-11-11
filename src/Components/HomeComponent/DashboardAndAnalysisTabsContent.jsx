@@ -2,15 +2,15 @@ import React from 'react';
 
 
 const DashboardAndAnalysisTabsContent = (probs) => {
-    return (
+    return ( 
         <>
             <div className="dashboard-and-analysis-tabs">
 
-                <img src={probs.src} alt="" />
-
+            <img src={probs.src} alt="" />
+                
             </div>
         </>
-    );
+     );
 }
-
+ 
 export default DashboardAndAnalysisTabsContent;

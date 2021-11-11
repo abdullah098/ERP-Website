@@ -6,9 +6,9 @@ import DashboardDesignImage from '../../Assets/Dashboard Design@2x.png';
 const Home = () => {
     return (
         <>
-            <div className="border border-dark hero">
-                <div className="hero-content border border-danger">  
-                    <div className="mx-auto best-solution text-center border border-danger">
+            <div className="hero">
+                <div className="hero-content ">  
+                    <div className="mx-auto best-solution text-center ">
                         <h4>Get a free demo for 14 days</h4>
                         <h1 className="fw-bold">Best Solution For All Your Digital Problems</h1>
                         <p>This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.</p>
@@ -16,7 +16,7 @@ const Home = () => {
 
                     </div>
 
-                    <div className="div-button mx-auto text-center border border-danger">
+                    <div className="div-button mx-auto text-center ">
                         <button className="btn button-demo fw-bold">
 
                             Request Demo - It's free

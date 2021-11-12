@@ -1,0 +1,75 @@
+.request-demo {
+    h4 {
+        font-size: 24px;
+        color: #041720;
+        margin: 0;
+    }
+    p {
+        color: #041720;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .form-group {
+        margin-top: 24px;
+
+        .reset-form {
+            margin-top: 24px;
+
+            a {
+                text-decoration: none;
+                color: #ff1616;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.ant-modal {
+    width: 582px !important;
+    height: 566px !important;
+
+    .ant-modal-body {
+        padding-bottom: 0 !important;
+    }
+
+    input {
+        width: 259px;
+        height: 48px;
+        border-radius: 4px;
+        margin-right: 16px;
+    }
+
+    .d-flex:not(:first-child) {
+        margin-top: 16px;
+    }
+
+    .form-control{
+        width: 259px !important;
+        height: 48px !important;
+        border-radius: 4px !important;
+        margin-right: 16px !important;
+    }
+
+    button {
+        margin-top: 24px;
+    }
+
+    .ant-select {
+        width: 259px !important;
+
+        .ant-select-selector {
+            height: 48px !important;
+            border-radius: 4px !important;
+            margin-right: 16px !important;
+
+            input{
+                padding-top: 15px !important;
+            }
+
+            .ant-select-selection-placeholder{
+                padding-top: 7px !important;
+            }
+        }
+    }
+}

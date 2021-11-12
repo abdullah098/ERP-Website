@@ -13,15 +13,28 @@
     z-index: 1;
 
     a {
-        width: 44px;
+        // width: 44px;
         height: 22px;
         color: $text-color;
         font-size: 16px;
         text-decoration: none;
-        padding-right: 53px;
-        padding-top: 27px;
-        padding-bottom: 30px;
+        margin-right: 53px;
+        padding-top: 0;
+        // padding-top: 27px;
+        // padding-bottom: 30px;
+
+        
     }
+    // a:hover {
+    //     border-bottom: 1px solid white;
+    // }
+    .active {
+        border-bottom: 1px solid white !important;
+    }
+    // a:visited {
+    //     border-bottom: 1px solid white;
+    // }
+    
 
     
 
@@ -36,5 +49,11 @@
         width: 146px;
         height: 42px;
         font-size: 16px;
+
+        &:hover {
+            opacity: 0.8;
+            background: white;
+            // color: #1760A6;
+        }
     }
 }

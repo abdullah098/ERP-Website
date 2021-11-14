@@ -43,6 +43,7 @@ const Solution = () => {
                                     description={card.description}
                                     image={card.image}
                                     link={card.link}
+                                    
 
                                  />
                             </div>

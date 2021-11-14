@@ -33,6 +33,14 @@ const Footer = () => {
                             <li style={{ marginBottom: "14px" }}>Contact Us</li>
                             <li>Pricing Plan</li>
                         </ul>
+                        {/* <h1 className="fw-bold" style={{ marginBottom: "16px" }}>Quick Link</h1>
+                        <ul className="navbar-nav">
+                            <li style={{ marginBottom: "14px" }}>Home</li>
+                            <li style={{ marginBottom: "14px" }}>About</li>
+                            <li style={{ marginBottom: "14px" }}>Our Services</li>
+                            <li style={{ marginBottom: "14px" }}>Contact Us</li>
+                            <li>Pricing Plan</li>
+                        </ul> */}
                     </div>
                     <div>
                         <ul className="navbar-nav">
@@ -43,13 +51,16 @@ const Footer = () => {
                             <li className="fw-bold" style={{ marginBottom: "14px" }}>Follow Us</li>
                             <li className="d-flex">
 
-
+                                {
+                                    // social icons with links
+                                }
+                                
                                 {socials.map((social, index) => (
                                     <li key={index}>
                                         <img src={social} alt="" key={index} />
                                     </li>
                                 ))}
-                                
+
                             </li>
                         </ul>
                     </div>

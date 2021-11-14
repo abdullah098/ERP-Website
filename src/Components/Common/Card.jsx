@@ -1,8 +1,8 @@
 import React from 'react';
-import {ReactComponent as ArrowRight} from '../../Assets/ArrowRight.svg';
+import { ReactComponent as ArrowRight } from '../../Assets/ArrowRight.svg';
 
 const Card = (probs) => {
-    return ( 
+    return (
         <div className="primary-card">
             <div className="card-image">
                 <img className="rounded-circle" src={probs.image} alt="" />
@@ -11,11 +11,15 @@ const Card = (probs) => {
                 <h4 className="fw-bold"> {probs.title} </h4>
                 <p>{probs.description}</p>
             </div>
-            <div className="card-f text-center">
-                <a href={probs.link}>Learn More <span>{<ArrowRight />}</span></a>
-            </div>
+
+            {probs.link ?
+                <div className="card-f text-center">
+                    <a href={probs.link}>Learn More <span>{<ArrowRight />}</span></a>
+                </div> : null
+            }
+
         </div>
-     );
+    );
 }
- 
+
 export default Card;

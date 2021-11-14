@@ -5,16 +5,25 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
 import RequestADemo from './RequestADemo';
 
+// render navigration bar component
 const NavBar = () => {
 
+    // STATES
+
     const [isModalVisible, setIsModalVisible] = useState(false);
+
+    // HOOKS
+
+    // METHODS
+
 
     const showModal = () => {
         setIsModalVisible(true);
     };
 
+    // create a function to close the modal
     const handleOk = () => {
-        setIsModalVisible(false);
+        setIsModalVisible(false); // define the state of the modal
         this.setState({ loading: true });
         setTimeout(() => {
             this.setState({ loading: false, visible: false });
@@ -24,15 +33,6 @@ const NavBar = () => {
     const handleCancel = () => {
         setIsModalVisible(false);
     };
-
-    
-
-
-
-
-
-
-
 
 
     return (
@@ -48,34 +48,36 @@ const NavBar = () => {
                     {/* <div> */}
 
                     <NavLink to="/home">Home</NavLink>
-                        {/* <NavLink to="/home">
+                    {/* <NavLink to="/home">
                             Home
                         </NavLink> */}
                     {/* </div> */}
                     {/* <div> */}
-                        <NavLink to="/aboutUs">
-                            About Us
-                        </NavLink>
+                    <NavLink to="/aboutUs">
+                        About Us
+                    </NavLink>
                     {/* </div> */}
                     {/* <div> */}
-                        <a href="a">Feature</a>
+                    <NavLink to="/features">
+                        Features
+                    </NavLink>
                     {/* </div> */}
                     {/* <div> */}
-                        <a href="a">Pricing Plan</a>
+                    <a href="a">Pricing Plan</a>
                     {/* </div> */}
                     {/* <div> */}
-                        <a href="a">Contact Us</a>
+                    <a href="a">Contact Us</a>
                     {/* </div> */}
                 </div>
 
 
                 <div>
 
-                    <Button type="btn bg-transparent text-white border border-white" onClick={showModal}>
+                    <Button className=" default-button btn bg-transparent text-white border border-white" onClick={showModal}>
                         Request Demo
                     </Button>
-                    <Modal visible={isModalVisible}  onCancel={handleCancel} footer={[
-                        
+                    <Modal visible={isModalVisible} onCancel={handleCancel} footer={[
+
                     ]}>
                         <RequestADemo />
                     </Modal>

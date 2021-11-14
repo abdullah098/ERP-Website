@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'
-import './index.css';
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

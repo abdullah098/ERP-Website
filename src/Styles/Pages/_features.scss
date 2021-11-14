@@ -79,6 +79,11 @@
             margin-bottom: 0px;
             margin-top: 16px;
         }
+
+        .slider-wrapper{
+            margin-top: 24px;
+            margin-bottom: 180px;
+        }
     }
 
 
@@ -115,5 +120,25 @@
                 margin-bottom: 0px;
             }
         }
+    }
+}
+
+
+// slick slider 
+
+.slick-slide{
+    height: 319px !important;
+}
+.slick-arrow{
+    background: #1760A6;
+
+    &:hover{
+        background: #1760A6;
+    }
+    &:focus{
+        background: #1760A6;
+    }
+    &:active{
+        background: #1760A6;
     }
 }

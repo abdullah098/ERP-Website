@@ -2,10 +2,19 @@ import React from 'react';
 import Cards from './../../Components/Features/Cards';
 import Store from '../../Assets/store.svg';
 import { Tabs } from 'antd';
+import Slider from "react-slick";
 
 const Features = () => {
 
     const { TabPane } = Tabs;
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    };
 
 
     const cards = [
@@ -125,6 +134,43 @@ const Features = () => {
                     <h1 className="fw-bold text-center">Features Video Gallery</h1>
                     <p className="text-center">All the features of the prism is shown in animated video. So you can easily know how the different feature of the prism works</p>
 
+                    <div className="slider-wrapper">
+                        <div className="container border">
+                            
+                                <Slider {...settings}>
+                                    <div>
+                                        <h3>1</h3>
+                                    </div>
+                                    <div>
+                                        <h3>2</h3>
+                                    </div>
+                                    <div>
+                                        <h3>3</h3>
+                                    </div>
+                                    <div>
+                                        <h3>4</h3>
+                                    </div>
+                                    <div>
+                                        <h3>5</h3>
+                                    </div>
+                                    <div>
+                                        <h3>6</h3>
+                                    </div>
+                                    <div>
+                                        <h3>7</h3>
+                                    </div>
+                                    <div>
+                                        <h3>8</h3>
+                                    </div>
+                                    <div>
+                                        <h3>9</h3>
+                                    </div>
+                                </Slider>
+                            
+                        </div>
+
+
+                    </div>
 
 
                 </div>

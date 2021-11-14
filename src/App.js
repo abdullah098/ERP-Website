@@ -3,9 +3,12 @@ import Home from './Components/HomeComponent/Home';
 import NavBar from './Layouts/NavBar';
 import Footer from './Layouts/Footer.jsx';
 import AboutUs from './Pages/AboutUs/index';
+import Features from './Pages/Features/index';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import './App.scss';
-import Features from './Pages/Features/index';
+
 
 
 

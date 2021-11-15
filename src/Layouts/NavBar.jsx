@@ -68,7 +68,9 @@ const NavBar = () => {
                     </NavLink>
                     {/* </div> */}
                     {/* <div> */}
-                    <a href="a">Contact Us</a>
+                    <NavLink to="/contactUs">
+                        Contact Us
+                    </NavLink>
                     {/* </div> */}
                 </div>
 

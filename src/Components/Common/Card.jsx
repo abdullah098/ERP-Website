@@ -12,10 +12,10 @@ const Card = (probs) => {
                 <p>{probs.description}</p>
             </div>
 
-            {probs.link ?
+            {probs.link &&
                 <div className="card-f text-center">
                     <a href={probs.link}>Learn More <span>{<ArrowRight />}</span></a>
-                </div> : null
+                </div>
             }
 
         </div>

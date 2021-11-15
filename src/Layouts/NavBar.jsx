@@ -63,7 +63,9 @@ const NavBar = () => {
                     </NavLink>
                     {/* </div> */}
                     {/* <div> */}
-                    <a href="a">Pricing Plan</a>
+                    <NavLink to="/pricing-plan">
+                        Pricing Plan
+                    </NavLink>
                     {/* </div> */}
                     {/* <div> */}
                     <a href="a">Contact Us</a>

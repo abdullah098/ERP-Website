@@ -17,6 +17,7 @@ const Pricing = () => {
             title: 'Starter Plan',
             price: '$ 9.99',
             description: 'Some of the basic feature is included',
+            recomanded: false,
             features: [
                 {
                     id: 1,
@@ -86,6 +87,7 @@ const Pricing = () => {
             title: 'Enterprise Plan',
             price: '$ 15.99',
             description: 'Some of the basic feature is included',
+            recomanded: false,
             features: [
                 {
                     id: 1,
@@ -145,12 +147,11 @@ const Pricing = () => {
     const callback = (key) => {
         console.log(key);
     }
-    // const text = `A dog is a type of domesticated animal.
-    // Known for its loyalty and faithfulness,
-    // it can be found as a welcome guest in many households across the world.`;
-
-    const onChange = (checked) => {
-        console.log(`switch to ${checked}`);
+    
+    // switch on off
+    const [switchState, setCSwitchState] = React.useState(1);
+    const onSwitchChange = (checked) => {
+        setCSwitchState(checked);
     };
 
     return (
@@ -168,8 +169,9 @@ const Pricing = () => {
 
                         <div className="switch">
                             <span className="text-white  mx-2">Mothely</span>
-                            <Switch defaultChecked onChange={onChange} />
+                            <Switch defaultChecked onChange={onSwitchChange} />
                             <span className="text-white mx-2" >Yearly</span>
+                            {switchState && <span className="text-white"><u>Save 30%</u></span>}
                         </div>
 
 
@@ -188,8 +190,8 @@ const Pricing = () => {
                 </div>
 
                 {/* pricing card  */}
-                <div className="pricing-card border">
-                    <div className="d-flex flex-wrap justify-content-center">
+                <div className="pricing-card">
+                    <div className="d-flex flex-wrap justify-content-center align-items-center">
                         {data.map((item, index) => (
                             <PricingCard data={item} />
                         ))}

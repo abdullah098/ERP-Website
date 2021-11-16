@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as Tick } from '../../Assets/tickBlue.svg';
 import clsx from "clsx";
+import {Link} from 'react-router-dom'
 
 
 const PricingCard = ({ data }) => {
@@ -9,7 +10,11 @@ const PricingCard = ({ data }) => {
 
     return (
         <>
-            <div className="pricing-card-wrapper position-relative">
+            {/* <div className="pricing-card-wrapper border position-relative"> */}
+
+            <div className={`pricing-card-wrapper position-relative ${
+                recomanded ? 'pricing-card-wrapper-active' : ''
+            }`}>
 
                 {recomanded && <div className="recomanded text-center border ">
                     <h6>Recomanded</h6>
@@ -32,7 +37,9 @@ const PricingCard = ({ data }) => {
                 </ul>
 
                 <div className="text-center">
-                    <button className="btn btn-primary">Chosse Plan</button>
+                    <Link to="/pricing-plan/contactInformation">
+                        <button className="btn btn-primary">Chosse Plan</button>
+                    </Link>
                 </div>
 
 

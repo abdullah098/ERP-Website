@@ -37,7 +37,7 @@ const PricingCard = ({ data }) => {
                 </ul>
 
                 <div className="text-center">
-                    <Link to="/pricing-plan/contactInformation">
+                    <Link to={`/pricing-plan/${id}`}>
                         <button className="btn btn-primary">Chosse Plan</button>
                     </Link>
                 </div>

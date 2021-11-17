@@ -80,7 +80,7 @@ const NavBar = () => {
                     <Button className=" default-button btn bg-transparent text-white border border-white" onClick={showModal}>
                         Request Demo
                     </Button>
-                    <Modal visible={isModalVisible} onCancel={handleCancel} footer={[
+                    <Modal className="request-demo-model-wrapper" visible={isModalVisible} onCancel={handleCancel} footer={[
 
                     ]}>
                         <RequestADemo />

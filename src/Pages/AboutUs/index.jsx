@@ -4,6 +4,7 @@ import Store from '../../Assets/store.svg';
 import Boxes from '../../Assets/boxes.svg';
 import Sketch from '../../Assets/sketch (1).svg';
 import Graph from '../../Assets/graph.svg';
+import OurmissionTick from '../../Assets/ourMissionTick.svg';
 
 const AboutUs = () => {
 
@@ -31,15 +32,15 @@ const AboutUs = () => {
     const our_mission_ticks = [
         {
             discription: 'We provide best solution which include useful features in a very low price.',
-            link: ''
+            link: OurmissionTick
         },
         {
             discription: 'Deliver on time & qualitative features to customer and create a family of happy & satisfied customers with long lasting relationship.',
-            link: ''
+            link: OurmissionTick
         },
         {
             discription: 'Develop innovative and environment friendly solution to save business information in digital form.',
-            link: ''
+            link: OurmissionTick
         }
     ]
 

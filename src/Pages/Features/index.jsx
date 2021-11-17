@@ -4,16 +4,20 @@ import Store from '../../Assets/store.svg';
 import { Tabs } from 'antd';
 import Slider from "react-slick";
 
+import KpiDashboardFeature from '../../Assets/kpiDashboardFeature.svg';
+import {ReactComponent as NextArrow} from '../../Assets/nextArrow.svg';
+import {ReactComponent as PrevArrow} from '../../Assets/previousArrow.svg';
+
 const Features = () => {
 
     const { TabPane } = Tabs;
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1
     };
 
 
@@ -113,10 +117,10 @@ const Features = () => {
                 <div className="dashboard-features-wrapper">
                     <h1 className="text-center fw-bold">Breakdown Of Dashboard Features</h1>
 
-                    <div className="tabs-wrapper">
+                    <div className="tabs-wrapper text-center">
                         <Tabs defaultActiveKey="1" centered>
                             <TabPane tab="KPI Dashboard" key="1">
-                                Content of Tab Pane 1
+                                <img src={KpiDashboardFeature} alt="" />
                             </TabPane>
                             <TabPane tab="BI Dashboard" key="2">
                                 Content of Tab Pane 2
@@ -130,43 +134,44 @@ const Features = () => {
                 </div>
 
 
-                <div className="features-video-wrapper">
+                <div className="features-video-wrapper ">
                     <h1 className="fw-bold text-center">Features Video Gallery</h1>
                     <p className="text-center">All the features of the prism is shown in animated video. So you can easily know how the different feature of the prism works</p>
 
                     <div className="slider-wrapper">
-                        <div className="container border">
-                            
-                                <Slider {...settings}>
-                                    <div>
-                                        <h3>1</h3>
-                                    </div>
-                                    <div>
-                                        <h3>2</h3>
-                                    </div>
-                                    <div>
-                                        <h3>3</h3>
-                                    </div>
-                                    <div>
-                                        <h3>4</h3>
-                                    </div>
-                                    <div>
-                                        <h3>5</h3>
-                                    </div>
-                                    <div>
-                                        <h3>6</h3>
-                                    </div>
-                                    <div>
-                                        <h3>7</h3>
-                                    </div>
-                                    <div>
-                                        <h3>8</h3>
-                                    </div>
-                                    <div>
-                                        <h3>9</h3>
-                                    </div>
-                                </Slider>
-                            
+                        <div className="container-fluid">
+
+                            <Slider {...settings} nextArrow= {<NextArrow/>} prevArrow={<PrevArrow />}>
+                                <div>
+                                    <video src=""></video>
+                                    {/* <img src="" alt="imga" /> */}
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                                <div>
+                                    <video src=""></video>
+                                </div>
+                            </Slider>
+
                         </div>
 
 

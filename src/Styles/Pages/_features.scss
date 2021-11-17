@@ -58,37 +58,28 @@
         }
     }
 
-
-
-
-    .dashboard-features-wrapper{
+    .dashboard-features-wrapper {
         margin-top: 160px;
     }
 
-
-
-    .features-video-wrapper{
+    .features-video-wrapper {
         margin-top: 150px;
-        h1{
+        h1 {
             font-size: 40px;
             margin: 0px;
         }
-        p{
+        p {
             font-size: 16px;
             color: #747474;
             margin-bottom: 0px;
             margin-top: 16px;
         }
 
-        .slider-wrapper{
+        .slider-wrapper {
             margin-top: 24px;
             margin-bottom: 180px;
         }
     }
-
-
-
-
 }
 
 // ------------------------------
@@ -123,22 +114,67 @@
     }
 }
 
+// slick slider
 
-// slick slider 
+.slider-wrapper {
+    .container-fluid {
+        // background: black;
+        padding-left: 124px;
+        padding-right: 124px;
+        .slick-slider {
+            svg:hover{
+                fill: #ffffff !important;
+                background: #1760a6;
+                
+            }
+            .slick-list {
+                
+                padding: 5px;
+                
+                .slick-track {
+                    .slick-slide {
+                        // position: relative;
+                        // background: #1760a6 !important;
+                        padding: 5px;
+                        
+                        // border: 1px solid red;
 
-.slick-slide{
-    height: 319px !important;
+                        
+                        video{
+                            display: block !important;
+                            width: 356px;
+                            height: 319px;
+                            background: red !important;
+                            margin: 0 auto;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.slick-arrow{
-    background: #1760A6;
 
-    &:hover{
-        background: #1760A6;
+// .slick-slide{
+//     height: 319px !important;
+// }
+.slick-arrow {
+    // background: #1760a6;
+    height: 35px;
+    width: 35px;
+
+    &:hover {
+        // background: #1760a6;
+        // fill: white;
+        // color: white;
+        
     }
-    &:focus{
-        background: #1760A6;
-    }
-    &:active{
-        background: #1760A6;
-    }
+    
+    
+//     &:focus {
+//         background: #1760a6;
+//     }
+//     &:active {
+//         background: #1760a6;
+//     }
 }

@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/features" component={Features} />
         <Route exact path="/pricing-plan" component={Pricing} />
         <Route exact path="/contactUs" component={ContactUs} />
-        <Route exact path="/pricing-plan/contactInformation" component={ContactInformation} />
+        <Route exact path="/pricing-plan/:id" component={ContactInformation} />
       </Switch>
 
       <Footer />

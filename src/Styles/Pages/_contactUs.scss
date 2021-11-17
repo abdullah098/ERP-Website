@@ -48,6 +48,31 @@
         .form-content {
             box-shadow: 0px 6px 12px #8a8a8a29;
             border-radius: 4px;
+
+            .col-8{
+                .thank-you-for-contact{
+                    img{
+                        margin-top: 90.81px ;
+                        margin-bottom: 16px;
+                    }
+                    h1{
+                        color: #165FA5 ;
+                        font-size: 40px;
+                        margin-bottom: 7px;
+                    }
+                    h2{
+                        color: #041720;
+                        font-size: 20px;
+                        margin-bottom: 38px;
+                        
+                    }
+                    
+                    p{
+                        font-size: 15px;
+                        margin-bottom: 90px;
+                    }
+                }
+            }
         }
 
         .col-8 {
@@ -110,6 +135,9 @@
                         margin-bottom: 78px;
                     }
                 }
+
+
+                
             }
         }
 

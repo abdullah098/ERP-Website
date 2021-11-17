@@ -45,33 +45,25 @@ const NavBar = () => {
 
 
                 <div className=" d-flex align-items-center">
-                    {/* <div> */}
 
                     <NavLink to="/home">Home</NavLink>
-                    {/* <NavLink to="/home">
-                            Home
-                        </NavLink> */}
-                    {/* </div> */}
-                    {/* <div> */}
+                    
                     <NavLink to="/aboutUs">
                         About Us
                     </NavLink>
-                    {/* </div> */}
-                    {/* <div> */}
+                    
                     <NavLink to="/features">
                         Features
                     </NavLink>
-                    {/* </div> */}
-                    {/* <div> */}
+                    
                     <NavLink to="/pricing-plan">
                         Pricing Plan
                     </NavLink>
-                    {/* </div> */}
-                    {/* <div> */}
+                    
                     <NavLink to="/contactUs">
                         Contact Us
                     </NavLink>
-                    {/* </div> */}
+                    
                 </div>
 
 

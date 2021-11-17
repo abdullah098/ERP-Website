@@ -94,15 +94,6 @@ const RequestADemo = () => {
                                 </Select>
 
 
-                                {/* <input type="text" className="form-control"  id="Country" placeholder="Enter your Country" list="mylist"/>
-                                <datalist className="bg-white" id="mylist">
-
-                                    {cointries.map((country, index) => (
-                                        <option key={index} value={country} />
-                                    ))}
-                                    
-                                </datalist> */}
-
                             </div>
                         </div>
 

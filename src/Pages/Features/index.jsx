@@ -20,7 +20,7 @@ const Features = () => {
         slidesToScroll: 1
     };
 
-
+    // cards data for maping
     const cards = [
         {
             title: 'Sales Information',
@@ -53,9 +53,6 @@ const Features = () => {
             img: Store
         }
     ];
-
-
-
 
 
     return (
@@ -99,14 +96,6 @@ const Features = () => {
                                     </div>
                                 ))}
 
-
-                                {/* <div className="col-6 border">
-                                    <Cards />
-                                </div>
-                                <div className="col-6 ">
-                                    <Cards />
-                                </div> */}
-
                             </div>
                         </div>
                     </div>
@@ -144,7 +133,6 @@ const Features = () => {
                             <Slider {...settings} nextArrow= {<NextArrow/>} prevArrow={<PrevArrow />}>
                                 <div>
                                     <video src=""></video>
-                                    {/* <img src="" alt="imga" /> */}
                                 </div>
                                 <div>
                                     <video src=""></video>

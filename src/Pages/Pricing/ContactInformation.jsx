@@ -34,21 +34,13 @@ const ContactInformation = () => {
         setIsModalVisible(false);
     };
 
-
-
-
-
-
-
-
-
-
     // switch state and dunction 
     const [switchState, setCSwitchState] = React.useState(1);
     const onSwitchChange = (checked) => {
         setCSwitchState(checked);
     };
 
+    // inner steps header data
     const { Step } = Steps;
     const steps = [
         {
@@ -142,11 +134,7 @@ const ContactInformation = () => {
                                                     steps[current] === steps[3] ? <PricingStep4 /> : null
                                     }
                                 </div>
-                                {/* {steps[current] === steps[0] ? <div className="steps-content">hi 1</div> : null } */}
-
-
-
-
+                                
                                 <div className="steps-action text-end">
 
                                     {current > 0 && (

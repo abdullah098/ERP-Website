@@ -8,6 +8,7 @@ import OurmissionTick from '../../Assets/ourMissionTick.svg';
 
 const AboutUs = () => {
 
+    // card data for map
     const cards = [
         {
             title: 'Easy To Use',
@@ -29,6 +30,7 @@ const AboutUs = () => {
         }
     ]
 
+    //our mission data for map
     const our_mission_ticks = [
         {
             discription: 'We provide best solution which include useful features in a very low price.',
@@ -44,6 +46,7 @@ const AboutUs = () => {
         }
     ]
 
+    // our mission data for map
     const values_we_provide = [
         {
             title: 'Quality',
@@ -161,23 +164,6 @@ const AboutUs = () => {
                         </div>
 
                     </div>
-
-
-
-
-
-                    {/* <div className="d-flex">
-                        <div className="prism-content">
-                            <h1 className="fw-bold text-white">Why Prism ?</h1>
-                            <p>This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.</p>
-                            <div className="flex-column">
-                                <button className="btn">Request Demo - It's free</button>
-                            </div>
-                        </div>
-                        <div className="prism-image">
-                            <img src={Graph} alt="" />
-                        </div>
-                    </div> */}
 
                 </div>
 

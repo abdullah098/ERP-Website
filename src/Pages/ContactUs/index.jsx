@@ -1,7 +1,4 @@
 import React, { useState , useEffect } from 'react';
-import { Input } from 'antd';
-import PhoneInput from 'react-phone-input-2'
-import { Select } from 'antd';
 import Mobile from '../../Assets/mobile.svg';
 import Email from '../../Assets/email.svg';
 import Location from '../../Assets/location.svg';
@@ -19,7 +16,6 @@ const ContactUs = () => {
 
     const [thankYou, setThankYou] = useState(false);
     const handleSubmit = (e) => {
-        // e.preventDefault();
         setThankYou(true);
     }
 
@@ -47,10 +43,6 @@ const ContactUs = () => {
                     <div className=" form-content row ">
                         <div className="col-8 bg-white ">
                             {thankYou ? <ThankYouForContact /> : <ContactForm handleSubmit={handleSubmit} />}
-                            
-
-
-
                         </div>
 
 
@@ -89,11 +81,6 @@ const ContactUs = () => {
 
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </>
     );

@@ -9,7 +9,7 @@ import { Collapse } from 'antd';
 
 const Pricing = () => {
 
-
+    // pricing plan data for map
     const data = [
         {
             id: 1,
@@ -124,6 +124,7 @@ const Pricing = () => {
 
     ]
 
+    //faq collapes data for map
     const colapesData = [
         {
             key: 1,
@@ -175,17 +176,6 @@ const Pricing = () => {
                         </div>
 
 
-                        {/* <div className="pricing-card border">
-                            <div className="d-flex flex-wrap justify-content-center">
-                                {data.map((item, index) => (
-                                    <PricingCard data={item} />
-                                ))}
-
-                            </div>
-
-                        </div> */}
-
-
                     </div>
                 </div>
 
@@ -217,15 +207,8 @@ const Pricing = () => {
                             
                         </Collapse>
 
-
-
-
                     </div>
                 </div>
-
-
-
-
             </div>
 
 

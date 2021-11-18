@@ -22,13 +22,13 @@ const NavBar = () => {
     };
 
     // create a function to close the modal
-    const handleOk = () => {
-        setIsModalVisible(false); // define the state of the modal
-        this.setState({ loading: true });
-        setTimeout(() => {
-            this.setState({ loading: false, visible: false });
-        }, 3000);
-    };
+    // const handleOk = () => {
+    //     setIsModalVisible(false); // define the state of the modal
+    //     this.setState({ loading: true });
+    //     setTimeout(() => {
+    //         this.setState({ loading: false, visible: false });
+    //     }, 3000);
+    // };
 
     const handleCancel = () => {
         setIsModalVisible(false);

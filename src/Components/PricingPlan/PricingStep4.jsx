@@ -8,7 +8,7 @@ import { Checkbox, Switch } from 'antd';
 const pricingStep4 = () => {
 
 
-    function onChange(date, dateString) {
+    function onDateChange(date, dateString) {
         console.log(date, dateString);
     }
 
@@ -57,7 +57,7 @@ const pricingStep4 = () => {
                             <div className="col-8">
                                 <label className="text-start" htmlFor="expDate">Expiry Date</label><br />
                                 <Space direction="vertical">
-                                    <DatePicker onChange={onChange} />
+                                    <DatePicker onChange={onDateChange} />
                                 </Space>
                             </div>
                             <div className="col-4">
@@ -74,7 +74,7 @@ const pricingStep4 = () => {
                 </div>
 
                 <div className="switch-wrapper">
-                    <Switch defaultChecked onChange={onChange} />
+                    <Switch defaultChecked onChange={onSwitchChange} />
                 </div>
 
 

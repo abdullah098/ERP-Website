@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
 import PhoneInput from 'react-phone-input-2'
-import { Select } from 'antd';
 
 const PricingStep1 = () => {
 

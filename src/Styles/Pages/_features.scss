@@ -1,10 +1,10 @@
 .features-wrapper {
     .features-hero {
         height: 433px;
-        background: url("../../Assets/Component\ 40\ –\ 1.svg");
+        background: transparent url("../../Assets/bg2x.png");
         background-size: cover;
-        padding-left: 100px;
-        padding-right: 106px;
+        // padding-left: 100px;
+        // padding-right: 106px;
         padding-top: 119px;
 
         .path {
@@ -29,7 +29,7 @@
     }
 
     .comprehensive-overview {
-        padding: 80px 106px 0px 100px;
+        padding: 80px 0px 0px 0px;
 
         h1 {
             color: #c5c5c5;
@@ -119,8 +119,8 @@
 .slider-wrapper {
     .container-fluid {
         // background: black;
-        padding-left: 124px;
-        padding-right: 124px;
+        // padding-left: 124px;
+        // padding-right: 124px;
         .slick-slider {
             svg:hover{
                 fill: #ffffff !important;

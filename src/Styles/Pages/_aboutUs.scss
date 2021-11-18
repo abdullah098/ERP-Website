@@ -1,10 +1,10 @@
 .about {
     .about-us {
         height: 433px;
-        background: url("../../Assets/Component\ 40\ –\ 1.svg");
+        background: transparent url("../../Assets/bg2x.png");
         background-size: cover;
-        padding-left: 100px;
-        padding-right: 106px;
+        // padding-left: 100px;
+        // padding-right: 106px;
         padding-top: 119px;
 
         .path {
@@ -29,8 +29,8 @@
     }
 
     .our-vision {
-        padding-left: 100px;
-        padding-right: 106px;
+        // padding-left: 100px;
+        // padding-right: 106px;
         padding-top: 80px;
 
         h1 {
@@ -91,9 +91,9 @@
     .prism-wrapper {
         height: 769px;
         margin-top: 160px;
-        background: url("../../Assets/Component\ 40\ –\ 1.svg");
+        background: transparent url("../../Assets/bg2x.png");
         background-size: cover;
-        padding: 40px 58px 62px 100px;
+        padding: 40px 0px 62px 0px;
         margin-bottom: 160px;
 
         .prism-content {

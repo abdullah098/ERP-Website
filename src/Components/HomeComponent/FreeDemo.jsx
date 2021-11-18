@@ -8,7 +8,7 @@ const FreeDemo = () => {
                 <p className="text-white px-5">Get started with a new account in no time. Try it for 14 days.</p>
                 <p className="text-white px-5">No credit card required.</p>
 
-                <button className="btn">Request Demo - It's free</button>
+                <button className="btn fw-bold">Request Demo - It's free</button>
             </div>
         </>
      );

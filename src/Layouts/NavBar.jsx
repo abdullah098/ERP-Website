@@ -37,7 +37,8 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="nav nav_style d-flex justify-content-between">
+            <nav className="nav nav_style d-flex justify-content-evenly">
+            
                 <div className="logo d-flex justify-content-baseline">
                     <img src={logo} alt="" />
                     <p className="fw-bold">Prism</p>

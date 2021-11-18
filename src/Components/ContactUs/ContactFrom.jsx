@@ -127,7 +127,7 @@ const ContactForm = (data) => {
                 <div className="row message">
                     <div className="col-12">
                         <label htmlFor="phone">Message</label>
-                        <Input placeholder="Message" />
+                        <Input className="message-text" placeholder="Message" />
                     </div>
 
                 </div>

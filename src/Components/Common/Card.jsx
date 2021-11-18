@@ -3,8 +3,8 @@ import { ReactComponent as ArrowRight } from '../../Assets/ArrowRight.svg';
 
 const Card = (probs) => {
     return (
-        <div className="primary-card">
-            <div className="card-image">
+        <div className="primary-card text-center">
+            <div className="card-image rounded-circle">
                 <img className="rounded-circle" src={probs.image} alt="" />
             </div>
             <div className="card-content text-center">

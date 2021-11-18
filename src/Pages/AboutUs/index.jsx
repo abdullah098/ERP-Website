@@ -73,78 +73,91 @@ const AboutUs = () => {
         <>
             <div className="about">
                 <div className="about-us border border-danger">
-                    <p className="path text-white mb-0">Home / About Us</p>
 
-                    <div className="start-content text-center">
+                    <div>
+                        <div className="container p-0">
+                            <p className="path text-white mb-0">Home / About Us</p>
 
-                        <h1 className="text-white fw-bold">About Us</h1>
-                        <p className="text-white mb-0">This is the best digital tool for all your businesses which you operate online it covers Industries like construction, <br /> retail stores and gives you ease to get all the records in one place without worrying about.</p>
+                            <div className="start-content text-center">
 
-                        <hr className="mx-auto" />
+                                <h1 className="text-white fw-bold">About Us</h1>
+                                <p className="text-white mb-0">This is the best digital tool for all your businesses which you operate online it covers Industries like construction, <br /> retail stores and gives you ease to get all the records in one place without worrying about.</p>
 
-                    </div>
-                </div>
+                                <hr className="mx-auto" />
 
-
-                <div className="our-vision ">
-                    <h1 className="fw-bold ">Our Vision</h1>
-                    <p>Our vision is to establish ourselves as any time value provider in the minds of our customers by providing innovative software solutions. We dream to be a trusted partner to all our customers and help them overcome their business challenges with our updated software. Our vision is to remove the hectic of our customers in their day to day business process and make their business process friendly to all the departments in their organization.</p>
-
-                    <div className="row">
-                        {cards.map((card, index) => (
-                            <div className="col-4" key={index}>
-                                <Card
-                                    title={card.title}
-                                    description={card.description}
-                                    image={card.image}
-
-
-                                />
                             </div>
-                        ))}
-                    </div>
-
-                    <div className="our-mission-wrapper">
-                        <h1 className="fw-bold">Our Mission</h1>
-                        <p>Our journey starts with our mission, which is persistent. It affirms our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
-
-                        <div className="ticks-wrapper">
-                            {our_mission_ticks.map((tick, index) => (
-                                <div className="d-flex mission" key={index}>
-                                    <img className="border rounded-circle" src={tick.link} alt="img" />
-                                    <h1 className="my-auto">{tick.discription}</h1>
-                                </div>
-                            ))}
                         </div>
                     </div>
 
-                    <div className="values-we-provode-wrapper">
-                        <h1 className="fw-bold">Values We Provide</h1>
-                        <p>Our journey starts with our mission, which is persistent. It affirms our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
-
-
-                        <div className="row">
-                            {values_we_provide.map((values_we_provide, index) => (
-                                <div className="col-4" key={index}>
-                                    <Card
-                                        title={values_we_provide.title}
-                                        description={values_we_provide.description}
-                                        image={values_we_provide.image}
-
-
-                                    />
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
                 </div>
 
-                
+
+                <div className="our-vision border ">
+
+                    <div>
+                        <div className="container p-0">
+                            <h1 className="fw-bold ">Our Vision</h1>
+                            <p>Our vision is to establish ourselves as any time value provider in the minds of our customers by providing innovative software solutions. We dream to be a trusted partner to all our customers and help them overcome their business challenges with our updated software. Our vision is to remove the hectic of our customers in their day to day business process and make their business process friendly to all the departments in their organization.</p>
+
+                            <div className="row">
+                                {cards.map((card, index) => (
+                                    <div className="col-4" key={index}>
+                                        <Card
+                                            title={card.title}
+                                            description={card.description}
+                                            image={card.image}
+
+
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="our-mission-wrapper">
+                                <h1 className="fw-bold">Our Mission</h1>
+                                <p>Our journey starts with our mission, which is persistent. It affirms our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
+
+                                <div className="ticks-wrapper">
+                                    {our_mission_ticks.map((tick, index) => (
+                                        <div className="d-flex mission" key={index}>
+                                            <img className="border rounded-circle" src={tick.link} alt="img" />
+                                            <h1 className="my-auto">{tick.discription}</h1>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="values-we-provode-wrapper">
+                                <h1 className="fw-bold">Values We Provide</h1>
+                                <p>Our journey starts with our mission, which is persistent. It affirms our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
+
+
+                                <div className="row">
+                                    {values_we_provide.map((values_we_provide, index) => (
+                                        <div className="col-4" key={index}>
+                                            <Card
+                                                title={values_we_provide.title}
+                                                description={values_we_provide.description}
+                                                image={values_we_provide.image}
+
+
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
 
                 <div className="prism-wrapper ">
 
-                    <div className="container-fluid p-0">
+                    <div className="container p-0">
                         <div className="prism-content p-0">
                             <div className="row m-0">
 

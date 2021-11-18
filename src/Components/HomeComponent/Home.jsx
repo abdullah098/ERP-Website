@@ -9,14 +9,20 @@ import FreeDemo from './FreeDemo';
 const Home = () => {
     return (
         <>
+
             <Hero />
             <Brands />
+
             <Solution />
+
+
+
+
             <DashboardAndAnalysis />
             <AppForDevices />
             <FreeDemo />
 
-            
+
         </>
     );
 }

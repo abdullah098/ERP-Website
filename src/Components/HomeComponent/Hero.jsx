@@ -11,7 +11,7 @@ const Home = () => {
                     <div className="mx-auto best-solution text-center ">
                         <h4>Get a free demo for 14 days</h4>
                         <h1 className="fw-bold">Best Solution For All Your Digital Problems</h1>
-                        <p>This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.</p>
+                        <p>This is the best digital tool for all your businesses which you operate online it covers Industries like construction, <br />retail stores and gives you ease to get all the records in one place without worrying about.</p>
 
                     </div>
 
@@ -24,7 +24,7 @@ const Home = () => {
                         </button>
                         <button className="btn button-works text-white">
                             <img src={Playlogo} alt="play-button" />
-                            How It Works
+                            <span>How It Works</span> 
                         </button>
                     </div>
 

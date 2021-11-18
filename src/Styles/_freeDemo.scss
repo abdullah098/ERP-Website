@@ -1,7 +1,8 @@
 .free-demo {
     margin-top: 161px;
-    background: transparent url("../Assets/Component\ 40\ –\ 1.svg") 0% 0% no-repeat padding-box;
+    background: transparent url("../Assets/bg2x.png");
     background-size: cover;
+    // background: no-repeat;
     height: 268px;
     margin-bottom: 160px;
     padding-top: 40px;
@@ -16,7 +17,7 @@
         margin-bottom: 0px;
     }
     .btn {
-        width: 217px;
+        // width: 217px;
         height: 42px;
         margin-top: 24px;
         padding: 10px 17px 10px 19px;

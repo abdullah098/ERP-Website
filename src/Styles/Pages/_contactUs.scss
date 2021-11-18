@@ -1,10 +1,10 @@
 .contact-us-wrapper {
     .cuntact-us-hero {
         height: 433px;
-        background: url("../../Assets/Component\ 40\ –\ 1.svg");
+        background: transparent url("../../Assets/bg2x.png");
         background-size: cover;
-        padding-left: 100px;
-        padding-right: 106px;
+        // padding-left: 100px;
+        // padding-right: 106px;
         padding-top: 119px;
     }
     .path {
@@ -39,14 +39,17 @@
 
     // from
     .form-wraper {
-        padding: 0px 103px 100px 103px;
+        padding: 0px 0px 100px 0px;
         margin-top: -110px;
         z-index: 1;
         border-radius: 4px;
 
+        
+
         .form-content {
             box-shadow: 0px 6px 12px #8a8a8a29;
-            border-radius: 4px;
+            
+            // border-radius: 4px;
 
             .col-8{
                 .thank-you-for-contact{
@@ -101,9 +104,14 @@
                         font-weight: bold;
                     }
                     input {
-                        height: 48px;
+                        height: 48px ;
                         margin-bottom: 24px;
                     }
+
+                    .message-text{
+                        height: 98px !important;
+                    }
+
 
                     .phone-country {
                         .react-tel-input {
@@ -142,7 +150,7 @@
         .col-4 {
             padding-top: 36px;
             background: #f1f8ff;
-            border-radius: 4px;
+            // border-radius: 4px;
 
             .location,
             .contact,
@@ -168,3 +176,4 @@
         }
     }
 }
+

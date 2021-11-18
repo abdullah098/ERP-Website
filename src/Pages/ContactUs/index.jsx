@@ -4,13 +4,21 @@ import Email from '../../Assets/email.svg';
 import Location from '../../Assets/location.svg';
 import ContactForm from '../../Components/ContactUs/ContactFrom';
 import ThankYouForContact from '../../Components/ContactUs/ThankYouForContact';
+import { useHistory } from "react-router-dom";
 
 const ContactUs = () => {
 
+    
+
+    let location = useHistory();;
     useEffect(() => {
-        console.log("abc");
-        
-    }, [])
+        // console.log("hi");
+        return location.listen(() => { 
+            
+          setThankYou(false)
+        //   console.log("listen");
+       }) 
+      },[]);
 
     
 
@@ -20,6 +28,8 @@ const ContactUs = () => {
     const handleSubmit = (e) => {
         setThankYou(true);
     }
+
+  
 
     return (
         <>

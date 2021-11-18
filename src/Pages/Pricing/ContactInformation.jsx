@@ -103,7 +103,7 @@ const ContactInformation = () => {
                         </div>
                         <div className="col-4 ps-0 ">
 
-                            <span className="text-white">Mothely</span>
+                            <span className="text-white">Monthly</span>
                             <Switch defaultChecked onChange={onSwitchChange} />
                             <span className="text-white mx-2" >Yearly</span>
                             {switchState && <span className="text-white"><u> Save 30%</u></span>}

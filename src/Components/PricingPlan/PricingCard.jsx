@@ -16,12 +16,12 @@ const PricingCard = ({ data }) => {
                 recomanded ? 'pricing-card-wrapper-active' : ''
             }`}>
 
-                {recomanded && <div className="recomanded text-center border ">
-                    <h6>Recomanded</h6>
+                {recomanded && <div className="recomanded text-center ">
+                    <h6>Recommended</h6>
                 </div>}
 
-                <div className="pricing-card-img text-center rounded-circle border">
-                    <img className=" border" src={img_src} alt="pic" />
+                <div className="pricing-card-img text-center rounded-circle ">
+                    <img  src={img_src} alt="pic" />
                 </div>
                 <h1 className="fw-bold text-center">{price} <span>/ month</span></h1>
                 <h4 className="fw-bold text-center">{title}</h4>

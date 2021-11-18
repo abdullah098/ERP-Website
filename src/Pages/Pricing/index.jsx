@@ -171,7 +171,7 @@ const Pricing = () => {
                                 <p className="text-white ">We offer different pricing plan options for users our pricing includes Starter, Business & Enterprise Plans.</p>
 
                                 <div className="switch">
-                                    <span className="text-white  mx-2">Mothely</span>
+                                    <span className="text-white  mx-2">Monthly</span>
                                     <Switch defaultChecked onChange={onSwitchChange} />
                                     <span className="text-white mx-2" >Yearly</span>
                                     {switchState && <span className="text-white"><u>Save 30%</u></span>}
@@ -185,7 +185,7 @@ const Pricing = () => {
                 </div>
 
                 {/* pricing card  */}
-                <div className="pricing-card border">
+                <div className="pricing-card">
                     <div>
                         <div className="container p-0">
                             <div className="d-flex flex-wrap justify-content-center align-items-center">

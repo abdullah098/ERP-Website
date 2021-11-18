@@ -7,6 +7,7 @@ import Features from './Pages/Features/index';
 import Pricing from './Pages/Pricing/index.jsx';
 import ContactUs from './Pages/ContactUs';
 import ContactInformation from './Pages/Pricing/ContactInformation.jsx';
+import Message from './Assets/message.svg';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,6 +23,7 @@ function App() {
     <>
       <NavBar />
 
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/Home" component={Home} />
@@ -33,6 +35,12 @@ function App() {
       </Switch>
 
       <Footer />
+
+      <div className="message-icon">
+        <img src={Message} alt="aaa" />
+      </div>
+
+
     </>
   );
 }

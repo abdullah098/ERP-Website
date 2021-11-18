@@ -15,6 +15,8 @@ const Home = () => {
             <DashboardAndAnalysis />
             <AppForDevices />
             <FreeDemo />
+
+            
         </>
     );
 }

@@ -12,6 +12,8 @@ const ContactUs = () => {
         
     }, [])
 
+    
+
 
 
     const [thankYou, setThankYou] = useState(false);

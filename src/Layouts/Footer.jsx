@@ -54,7 +54,7 @@ const Footer = () => {
                                 {
                                     // social icons with links
                                 }
-                                
+
                                 {socials.map((social, index) => (
                                     <li key={index}>
                                         <img src={social} alt="" key={index} />
@@ -67,7 +67,19 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-end-bottom text-center text-white">
+                    {/* <div className="d-flex text-center">
+                        <div>
+                            <p>Copyright © 2020 JMM Technologies. All rights reserved.</p>
+                        </div>
+                        <div className="float-end">
+                            <p className="text-end">Terms & Conditions</p>
+                        </div>
+
+                    </div> */}
+                    
                     <p>Copyright © 2020 JMM Technologies. All rights reserved.</p>
+                    
+                
                 </div>
             </footer>
         </>

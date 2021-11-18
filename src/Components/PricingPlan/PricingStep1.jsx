@@ -20,13 +20,13 @@ const PricingStep1 = () => {
                 <div className="row fname-lname">
                     <div className="col-6 fname">
                         <label className="fw-bold" htmlFor="first_name">First Name</label>
-                        <Input />
+                        <Input placeholder="First Name"/>
 
                     </div>
 
                     <div className="col-6">
                         <label className="fw-bold" htmlFor="last_name">Last Name</label>
-                        <Input />
+                        <Input placeholder="Last Name"/>
 
                     </div>
 
@@ -36,7 +36,7 @@ const PricingStep1 = () => {
 
                     <div className="col-6">
                         <label className="fw-bold" htmlFor="email">Email</label>
-                        <Input />
+                        <Input placeholder="Email"/>
 
 
                     </div>

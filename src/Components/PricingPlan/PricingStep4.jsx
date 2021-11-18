@@ -38,13 +38,13 @@ const pricingStep4 = () => {
                 <div className="row city-state">
                     <div className="col-6 fname">
                         <label className="text-start" htmlFor="nameOfCard">Name On Card</label>
-                        <Input placeholder="Enter your City" />
+                        <Input placeholder="Name On Card" />
 
                     </div>
 
                     <div className="col-6">
                         <label htmlFor="creditCardNumber">Credit Card Number</label>
-                        <Input placeholder="Enter your Email" />
+                        <Input placeholder="Credit Card Number" />
 
                     </div>
 
@@ -62,7 +62,7 @@ const pricingStep4 = () => {
                             </div>
                             <div className="col-4">
                                 <label className="text-start" htmlFor="cvc">CVC</label>
-                                <Input placeholder="Enter your Zip Code" />
+                                <Input placeholder="CVC" />
                             </div>
                         </div>
                     </div>
@@ -70,10 +70,13 @@ const pricingStep4 = () => {
 
                 <div className="row auto-renew">
                     <label className="text-start" htmlFor="autoRenew">Auto Renew</label><br />
-                    
+
                 </div>
 
-                <Switch defaultChecked onChange={onChange} />
+                <div className="switch-wrapper">
+                    <Switch defaultChecked onChange={onChange} />
+                </div>
+
 
                 <div className="row radio-check">
                     <Checkbox onChange={onCheckRadioChange}>

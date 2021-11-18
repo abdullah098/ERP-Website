@@ -177,8 +177,6 @@
     }
 }
 
-
-
 // ==================================================================
 // ---------------------  pricing plan/Contact infromation
 
@@ -213,6 +211,8 @@
         }
         .steps-wrapper {
             .col-8 {
+                box-shadow: 0px 6px 12px #8a8a8a29;
+                border-radius: 4px;
                 .steps-content-wrapper {
                     padding: 24px 34px 24px 34px;
                     .steps-level {
@@ -311,6 +311,17 @@
     }
 }
 
+//------------------ business type in step 2
+.select-business-type {
+    .ant-select {
+        width: 100%;
+        .ant-select-selector {
+            height: 44px;
+            margin: 0 auto;
+        }
+    }
+}
+
 // ------------------------ant date picker in price step 3-------------
 .ant-space {
     width: 100%;
@@ -325,8 +336,15 @@
     }
 }
 
-// ant moden on done
-.transaction-success-modal{
+//-------------------Radio on step 4 --------------
+.switch-wrapper {
+    .ant-switch-checked {
+        background-color: #ff9720 !important;
+    }
+}
+
+// ant modal on done
+.transaction-success-modal {
     .ant-modal-content {
         padding: 49px 65px 48px 65px;
         width: 868px;
@@ -351,9 +369,8 @@
             border: none;
             width: 358px;
             height: 48px;
-            color: #FFFFFF;
+            color: #ffffff;
             font-size: 16px;
         }
     }
 }
-

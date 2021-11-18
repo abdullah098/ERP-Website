@@ -134,7 +134,7 @@ const ContactInformation = () => {
                                                     steps[current] === steps[3] ? <PricingStep4 /> : null
                                     }
                                 </div>
-                                
+
                                 <div className="steps-action text-end">
 
                                     {current > 0 && (
@@ -144,7 +144,7 @@ const ContactInformation = () => {
                                     )}
                                     {current === steps.length - 1 && (
                                         <Button type="primary" onClick={showModal}>
-                                            Done
+                                            Confrim Payment
                                         </Button>
 
                                     )}
@@ -178,8 +178,8 @@ const ContactInformation = () => {
 
                         </div>
 
-                        <div className="col-4 border">
-                            <div className="container bg-white border border-danger">
+                        <div className="col-4">
+                            <div className="container bg-white">
                                 <div className="row mx-auto">
                                     <h1 className="fw-bold p-0 m-0">Order Summary</h1>
                                 </div>

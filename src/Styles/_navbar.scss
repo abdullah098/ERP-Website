@@ -22,8 +22,6 @@
         padding-top: 0;
         // padding-top: 27px;
         // padding-bottom: 30px;
-
-        
     }
     // a:hover {
     //     border-bottom: 1px solid white;
@@ -34,9 +32,6 @@
     // a:visited {
     //     border-bottom: 1px solid white;
     // }
-    
-
-    
 
     p {
         margin: 0;
@@ -54,6 +49,25 @@
             opacity: 0.8;
             background: white;
             // color: #1760A6;
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .nav_style {
+        padding: 0;
+        width: 100%;
+        border: 1px solid red;
+
+        .logo,
+        .nav-links-btn,
+        #req-demo-btn,
+        .default-button {
+            display: none !important;
+        }
+
+        .container{
+            background: green;
         }
     }
 }

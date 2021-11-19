@@ -63,7 +63,7 @@ const AppForDevices = () => {
                             <p>We also have app for drivers where they can easily track their deliveries and saved the records of their deliveries how many they delivered and how many are <br />remaining. And the record is also fetched in prsim.</p>
 
 
-                            <div className="d-flex justify-content-evenly border">
+                            <div className="content-flex-star d-flex justify-content-evenly border">
                                 <div>
                                     <img className="mobile-pic" src={Mobile} alt="" />
                                 </div>
@@ -81,7 +81,7 @@ const AppForDevices = () => {
                                     <img src={GooglePlay} alt="" />
 
                                 </div>
-                                <div className="d-flex align-items-center">
+                                <div className="star-pic d-flex align-items-center">
                                     <img src={StarIcon} alt="" />
                                 </div>
                             </div>

@@ -34,3 +34,72 @@
 
     
 }
+
+
+@media screen and (max-width: 992px){
+    .app-for-devices{
+        margin-top: 229px ;
+        padding: 0px 19px 0px 19px !important;
+        .app-for-devices-content{
+            h1{
+                font-size: 20px;
+                margin: 0px;
+            }
+            h2{
+                font-size: 14px; 
+            }
+            .content-flex-star{
+                flex-direction: column;
+                position: relative;
+                align-items: center;
+                div{
+                   margin-top: 20px !important;; 
+                }
+                .star-pic{
+                    position: absolute;
+                    z-index: -1;
+                    bottom: 150px;
+                    right: -20px;
+                    width: 107px !important;
+                    overflow: hidden;
+                    opacity: 0.2;
+                }
+            }
+            ul{
+                margin-top: 25px;
+                li{
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    
+    
+        .almot-everything{
+            margin-top: 160px;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+            .container-fluid{
+                .row{
+                    .col-md-4{
+                        text-align: center !important;
+                        margin: 0px auto !important;
+                        .custom-card2{
+                            margin: 0px auto;
+                        }
+                        .card-image{
+                            margin: 0px auto
+                        }
+                    }
+                }
+            }
+    
+            
+        }
+    
+        
+    }
+}

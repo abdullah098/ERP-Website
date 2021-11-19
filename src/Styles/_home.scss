@@ -11,3 +11,13 @@
     box-shadow: 0px 10px 20px #85858529;
     
 }
+
+
+@media screen and (max-width: 968px) {
+    .message-icon{
+        left: 75%;
+        right: 10%;
+        bottom: 12%;
+        margin: auto;
+    }
+}

@@ -5,16 +5,71 @@
     background-size: cover;
     padding-top: 40px;
 
-    .dashboard-analysis-content{
-        
+    .dashboard-analysis-content {
         // margin-left: 100px;
         // margin-right: 189px;
 
-        h1{
+        h1 {
             font-size: 40px;
         }
+    }
+}
+
+
+
+
+@media screen and (max-width: 968px) {
+    .dashboard-analysis {
+        margin-top: 160px;
+        height: 565px;
+        background: transparent url("../Assets/bg2x.png");
+        background-size: cover;
+        padding-top: 40px;
+    
+        div{
+            .container{
+                padding: 0px 19px 0px 19px !important;
+                .dashboard-analysis-content {
+                    // margin-left: 100px;
+                    // margin-right: 189px;
+            
+                    h1 {
+                        font-size: 20px !important;
+                    }
+                    p{
+                        font-size: 16px !important;
+                    }
+
+
+                    .ant-tabs-tab-btn{
+                        font-size: 14px !important;
+                        padding: 10px 9px 9px 9px !important;
+                    }
+                    .ant-tabs-tab{
+                        margin: 0px 0px 0px 5px !important;
+                        // padding: 10px 2px 10px 2px !important;
+                        // overflow: scroll !important;
+
+                    }
+
+                    .ant-tabs-nav-operations{
+                        display: none !important;
+                    }
+                    
+
+                    .dashboard-and-analysis-tabs{
+                        height: 216px;
+                        img{
+                            height: 216px;
+                        }
+                    }
+                    
+
+                    
+                }
+            }
+        }
+        
         
     }
-
-
 }

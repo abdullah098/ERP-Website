@@ -81,7 +81,7 @@ const AboutUs = () => {
                             <div className="start-content text-center">
 
                                 <h1 className="text-white fw-bold">About Us</h1>
-                                <p className="text-white mb-0">This is the best digital tool for all your businesses which you operate online it covers Industries like construction, <br /> retail stores and gives you ease to get all the records in one place without worrying about.</p>
+                                <p className="text-white mb-0">This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.</p>
 
                                 <hr className="mx-auto" />
 
@@ -99,7 +99,7 @@ const AboutUs = () => {
                             <h1 className="fw-bold ">Our Vision</h1>
                             <p>Our vision is to establish ourselves as any time value provider in the minds of our customers by providing innovative software solutions. We dream to be a trusted partner to all our customers and help them overcome their business challenges with our updated software. Our vision is to remove the hectic of our customers in their day to day business process and make their business process friendly to all the departments in their organization.</p>
 
-                            <div className="row">
+                            <div className="row our-vision-card">
                                 {cards.map((card, index) => (
                                     <div className="col-4" key={index}>
                                         <Card
@@ -132,7 +132,7 @@ const AboutUs = () => {
                                 <p>Our journey starts with our mission, which is persistent. It affirms our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
 
 
-                                <div className="row">
+                                <div className="row values-card">
                                     {values_we_provide.map((values_we_provide, index) => (
                                         <div className="col-4" key={index}>
                                             <Card
@@ -164,9 +164,9 @@ const AboutUs = () => {
                                 <div className="col-6 p-0 ">
                                     <h1 className="fw-bold text-white">Why Prism ?</h1>
                                     <p>This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.This is the best digital tool for all your businesses which you operate online it covers Industries like construction, retail stores and gives you ease to get all the records in one place without worrying about.</p>
-
-                                    <button className="btn">Request Demo - It's free</button>
-
+                                    <div className="demo-btn">
+                                        <button className="btn">Request Demo - It's free</button>
+                                    </div>
                                 </div>
                                 <div className="col-6 prism-image">
                                     <img src={Graph} alt="" />

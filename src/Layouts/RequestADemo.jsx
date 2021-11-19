@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Select } from 'antd';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { Input } from 'antd';
+import { Input, Form, Button } from 'antd';
 
 const RequestADemo = () => {
 
@@ -42,25 +42,42 @@ const RequestADemo = () => {
                 <h4 className="fw-bold" >Request Demo Form</h4>
                 <p>For the prism demo fill the details below to get your demo.</p>
 
-                <form className="request-demo-form">
+                <Form className="request-demo-form">
                     <div className="form-group">
 
                         <div className="d-flex">
                             <div className="flex-colum">
-                                <label htmlFor="name">Name</label>
-                                <Input placeholder="Enter your name" />
+                                {/* <label htmlFor="name">Name</label> */}
+
+                                <Form.Item
+                                    label="Full Name"
+                                    name="name"
+                                    rules={[{ required: true, message: 'Please input your Name!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+
+                                {/* <Input placeholder="Enter your name" /> */}
                                 {/* <input type="text" className="form-control" id="name" placeholder="Enter your name" /> */}
                             </div>
 
                             <div className="flex-colum">
-                                <label htmlFor="email">Email</label>
-                                <Input placeholder="Enter your Email" />
+
+                                <Form.Item
+                                    label="Email"
+                                    name="email"
+                                    rules={[{ required: true, message: 'Please input your Name!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+                                {/* <label htmlFor="email">Email</label>
+                                <Input placeholder="Enter your Email" /> */}
                                 {/* <input type="email" className="form-control" id="email" placeholder="Enter your email" /> */}
                             </div>
 
                         </div>
 
-                        <div className="d-flex">
+                        <div className="d-flex mt-0">
                             <div className="flex-colum">
                                 <label htmlFor="phone_number">Mobile Number</label>
                                 <PhoneInput
@@ -99,32 +116,54 @@ const RequestADemo = () => {
 
                         <div className="d-flex">
                             <div className="flex-colum">
-                                <label htmlFor="phone">Campany</label>
-                                <Input placeholder="Company" />
+                                <Form.Item
+                                    label="Company"
+                                    name="company"
+                                    rules={[{ required: true, message: 'Please input your Name!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+                                {/* <label htmlFor="phone">Campany</label>
+                                <Input placeholder="Company" /> */}
                                 {/* <input type="text" className="form-control" id="phone" placeholder="Enter your phone" /> */}
 
 
                             </div>
                             <div className="flex-colum">
-                                <label htmlFor="company">Number of Users</label>
-                                <Input placeholder="# of Users" />
+
+                                <Form.Item
+                                    label="Number of Users"
+                                    name="userNumbers"
+                                    rules={[{ required: true, message: 'Please input your Name!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+                                {/* <label htmlFor="company">Number of Users</label>
+                                <Input placeholder="# of Users" /> */}
                                 {/* <input type="text" className="form-control" id="company" placeholder="Enter your company" /> */}
                             </div>
                         </div>
 
 
 
-                        <div className="reset-form float-end border" >
+                        <div className="reset-form float-end mb-2" >
                             <a href="/">Reset from </a>
                         </div>
+                        <br />
+                        <div>
+                            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                                <Button className="submit-btn" type="primary" htmlType="submit">
+                                    Submit
+                                </Button>
+                            </Form.Item>
+                        </div>
 
-
-                        <button type="submit" className="btn btn-primary submit-btn">Submit</button>
+                        {/* <button type="submit" className="btn btn-primary submit-btn">Submit</button> */}
 
 
 
                     </div>
-                </form>
+                </Form>
             </div>
         </>
     );

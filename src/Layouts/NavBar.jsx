@@ -38,37 +38,37 @@ const NavBar = () => {
     return (
         <>
             <nav className="nav nav_style d-flex justify-content-evenly">
-            
+
                 <div className="logo d-flex justify-content-baseline">
                     <img src={logo} alt="" />
                     <p className="fw-bold">Prism</p>
                 </div>
 
 
-                <div className=" d-flex align-items-center">
+                <div className="nav-links-btn d-flex align-items-center">
 
                     <NavLink to="/home">Home</NavLink>
-                    
+
                     <NavLink to="/aboutUs">
                         About Us
                     </NavLink>
-                    
+
                     <NavLink to="/features">
                         Features
                     </NavLink>
-                    
+
                     <NavLink to="/pricing-plan">
                         Pricing Plan
                     </NavLink>
-                    
+
                     <NavLink to="/contactUs">
                         Contact Us
                     </NavLink>
-                    
+
                 </div>
 
 
-                <div>
+                <div classname="req-demo-btn" id="#req-demo-btn">
 
                     <Button className=" default-button btn bg-transparent text-white border border-white" onClick={showModal}>
                         Request Demo
@@ -79,6 +79,24 @@ const NavBar = () => {
                         <RequestADemo />
                     </Modal>
                 </div>
+
+
+                {/* ----------------mobile nav------------  */}
+                
+                <div>
+                    <div className="container mx-auto border">
+                        <div className="d-flex">
+                            <img src="" alt="logo" />
+                            <button>a</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
             </nav>
         </>
     );

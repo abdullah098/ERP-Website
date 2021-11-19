@@ -11,3 +11,29 @@
         margin-right: 135px;
     }
 }
+
+
+
+
+
+@media screen and (max-width: 968px) {
+    .brands {
+        margin-top: 153px;
+        background: #F8FBFF;
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 32px;
+        padding-bottom: 31px;
+
+        img:nth-child(odd){
+            display: none  !important;
+        }
+    
+        .brand-image:not(:last-child) {
+            margin-right: 0px;
+        }
+    }
+
+    
+}

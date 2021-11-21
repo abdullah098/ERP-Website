@@ -177,3 +177,111 @@
     }
 }
 
+
+
+// media query for mobile
+
+@media screen and (max-width: 968px) {
+    .contact-us-wrapper {
+        .cuntact-us-hero {
+            height: 369px;
+            padding: 70px 19px 0px 19px;
+        }
+        .path {
+            display: none;
+        }
+    
+        .start-content {
+            padding-top: 40px;
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    
+        // from
+        .form-wraper {
+            padding: 0px 0px 100px 0px;
+            .form-content {
+                flex-direction: column;
+                .col-8{
+                    width: 100%;
+                    .thank-you-for-contact{
+                        h1{
+                            font-size: 20px;
+                        }
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+    
+            .col-8 {
+                h1 {
+                    font-size: 20px;
+                }
+                .request-demo-form {
+                    h4 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    .form-group {
+                        .col-6{
+                            width: 100%;
+                        }
+                        input {
+                            height: 48px ;
+                        }
+                        .message-text{
+                            height: 163px !important;
+                        }
+                        .name-email{
+                            flex-direction: column;
+                        }
+    
+                        .phone-country {
+                            flex-direction: column;
+                            .react-tel-input {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+                            .ant-select {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .col-4 {
+                width: 100%;
+    
+                .location,
+                .contact,
+                .email {
+                    margin-left: 0%;
+                    justify-content: center;
+                }
+    
+                h1 {
+                    font-size: 20px;
+                }
+                .d-flex {
+                    
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

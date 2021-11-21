@@ -121,7 +121,7 @@ const Features = () => {
                             <div className="tabs-wrapper text-center">
                                 <Tabs defaultActiveKey="1" centered>
                                     <TabPane tab="KPI Dashboard" key="1">
-                                        <img src={KpiDashboardFeature} alt="" />
+                                        <img className="img-fluid" src={KpiDashboardFeature} alt="" />
                                     </TabPane>
                                     <TabPane tab="BI Dashboard" key="2">
                                         Content of Tab Pane 2

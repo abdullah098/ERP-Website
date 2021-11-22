@@ -110,6 +110,30 @@
                             margin-right: 114px;
                             margin-left: 114px;
                             margin-bottom: 40px;
+                            display: none;
+                        }
+                        .steps-level-mobile-968{
+                            display: block;
+
+                            h1{
+                                font-size: 20px;
+                                color: #1760A6;
+                            }
+                            .step-circle{
+                                width: 32px;
+                                height: 32px;
+                                text-align: center;
+                                border: 2px dashed #1760A6;
+                                color: #1760A6;
+                                
+                                
+                                h1{
+                                    font-size: 14px;
+                                    // margin: 0px auto;
+                                    color: #1760A6;
+                                    margin-top: 5px;
+                                }
+                            }
                         }
                         .steps-content {
                             min-height: 200px;
@@ -181,6 +205,12 @@
 
     // ant modal on done
     .transaction-success-modal {
+        width: 100% !important; ;
+        height: 100% ;
+        top: 0px ;
+        padding-bottom: 0px;
+        
+
         .ant-modal-content {
             padding: 0px 0px 0px 0px;
             width: 100%;
@@ -203,6 +233,8 @@
                 width: 310px;
             }
         }
+
+        
     }
 
     

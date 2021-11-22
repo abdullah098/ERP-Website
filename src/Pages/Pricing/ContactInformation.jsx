@@ -124,7 +124,44 @@ const ContactInformation = () => {
                                             <Step key={item.title} title={item.title} />
                                         ))}
                                     </Steps>
+
+
                                 </div>
+                                {/* steps for mobile  */}
+                                <div className="steps-level-mobile-968">
+                                    {
+                                        steps[current] === steps[0] ?
+                                            <h1>
+                                                {steps[current].title}
+                                                <div className="step-circle rounded-circle float-end">
+                                                    <h1>1</h1>
+                                                </div>
+                                            </h1> :
+                                            steps[current] === steps[1] ?
+                                                <h1>
+                                                    {steps[current].title}
+                                                    <div className="step-circle rounded-circle float-end">
+                                                        <h1>2</h1>
+                                                    </div>
+
+                                                </h1> :
+                                                steps[current] === steps[2] ?
+                                                    <h1>
+                                                        {steps[current].title}
+                                                        <div className="step-circle rounded-circle float-end">
+                                                            <h1>3</h1>
+                                                        </div>
+                                                    </h1> :
+                                                    steps[current] === steps[3] ?
+                                                        <h1>
+                                                            {steps[current].title}
+                                                            <div className="step-circle rounded-circle float-end">
+                                                                <h1>4</h1>
+                                                            </div>
+                                                        </h1> : null
+                                    }
+                                </div>
+                                {/* steps for mobile end  */}
 
                                 <div className="steps-content">
                                     {

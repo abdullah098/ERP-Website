@@ -40,34 +40,87 @@
         margin-top: 7px;
     }
 
-    button {
-        width: 146px;
-        height: 42px;
-        font-size: 16px;
+    .req-demo {
+        button {
+            width: 146px;
+            height: 42px;
+            font-size: 16px;
 
-        &:hover {
-            opacity: 0.8;
-            background: white;
-            // color: #1760A6;
+            &:hover {
+                opacity: 0.8;
+                background: white;
+                // color: #1760A6;
+            }
         }
     }
+
+    .mobile-nav {
+        display: none;
+    }
 }
+
+
+
 
 @media screen and (max-width: 968px) {
     .nav_style {
         padding: 0;
         width: 100%;
         border: 1px solid red;
+        display: block !important;
 
         .logo,
         .nav-links-btn,
-        #req-demo-btn,
-        .default-button {
+        .req-demo {
             display: none !important;
         }
 
-        .container{
-            background: green;
+        .mobile-nav {
+            display: block;
+            height: 79px;
+            padding: 24px 17px 22px 17px;
+
+            .mobile-nav-content {
+                // background: green;
+                display: flex;
+                justify-content: space-between;
+            }
         }
+    }
+}
+
+.drawer-custom {
+    .ant-drawer-body {
+        background: #1d1d1d !important;
+        padding: 134px 77px 0px 77px;
+        .mobile-nav-links {
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .active {
+                color: #175fa4 !important;
+            }
+        }
+        .req-demo-mobile {
+            margin-top: 246px;
+            margin-bottom: 54px;
+            button {
+                width: 146px !important;
+                height: 42px !important;
+                font-size: 16px;
+            }
+        }
+    }
+    svg {
+        fill: white;
+    }
+    .ant-drawer-content-wrapper {
+        position: absolute;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }

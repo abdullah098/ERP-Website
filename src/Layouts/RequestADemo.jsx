@@ -47,10 +47,10 @@ const RequestADemo = () => {
 
                         <div className="d-flex">
                             <div className="flex-colum">
-                                {/* <label htmlFor="name">Name</label> */}
+                                <label htmlFor="name">Name</label>
 
                                 <Form.Item
-                                    label="Full Name"
+                                    // label="Full Name"
                                     name="name"
                                     rules={[{ required: true, message: 'Please input your Name!' }]}
                                 >
@@ -62,9 +62,9 @@ const RequestADemo = () => {
                             </div>
 
                             <div className="flex-colum">
-
+                                <label htmlFor="email">Email</label>
                                 <Form.Item
-                                    label="Email"
+                                    // label="Email"
                                     name="email"
                                     rules={[{ required: true, message: 'Please input your Name!' }]}
                                 >
@@ -116,8 +116,9 @@ const RequestADemo = () => {
 
                         <div className="d-flex">
                             <div className="flex-colum">
+                                <label htmlFor="company">Company</label>
                                 <Form.Item
-                                    label="Company"
+                                    // label="Company"
                                     name="company"
                                     rules={[{ required: true, message: 'Please input your Name!' }]}
                                 >
@@ -130,9 +131,9 @@ const RequestADemo = () => {
 
                             </div>
                             <div className="flex-colum">
-
+                                <label htmlFor="no_users">Number of Users</label>
                                 <Form.Item
-                                    label="Number of Users"
+                                    // label="Number of Users"
                                     name="userNumbers"
                                     rules={[{ required: true, message: 'Please input your Name!' }]}
                                 >

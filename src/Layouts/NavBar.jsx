@@ -1,9 +1,10 @@
 
 import { NavLink } from 'react-router-dom';
-import logo from '../Assets/Group 2070.svg';
 import React, { useState } from 'react';
-import { Modal, Button } from 'antd';
+import { Modal, Button, Drawer } from 'antd';
 import RequestADemo from './RequestADemo';
+import FinalLogo from '../Assets/FinalLogo.svg';
+import NavMenu from '../Assets/navMenu.svg';
 
 // render navigration bar component
 const NavBar = () => {
@@ -11,6 +12,7 @@ const NavBar = () => {
     // STATES
 
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isMobileModalVisible, setIsmobileModalVisible] = useState(false);
 
     // HOOKS
 
@@ -21,17 +23,26 @@ const NavBar = () => {
         setIsModalVisible(true);
     };
 
-    // create a function to close the modal
-    // const handleOk = () => {
-    //     setIsModalVisible(false); // define the state of the modal
-    //     this.setState({ loading: true });
-    //     setTimeout(() => {
-    //         this.setState({ loading: false, visible: false });
-    //     }, 3000);
-    // };
-
     const handleCancel = () => {
         setIsModalVisible(false);
+    };
+
+
+    const showMobileModal = () => {
+        setIsmobileModalVisible(true);
+    };
+    const handleMobileCancel = () => {
+        setIsmobileModalVisible(false);
+    };
+
+
+    // drawer 
+    const [visible, setVisible] = useState(false);
+    const showDrawer = () => {
+        setVisible(true);
+    };
+    const onCloseDrawer = () => {
+        setVisible(false);
     };
 
 
@@ -40,8 +51,7 @@ const NavBar = () => {
             <nav className="nav nav_style d-flex justify-content-evenly">
 
                 <div className="logo d-flex justify-content-baseline">
-                    <img src={logo} alt="" />
-                    <p className="fw-bold">Prism</p>
+                    <img src={FinalLogo} alt="" />
                 </div>
 
 
@@ -68,11 +78,11 @@ const NavBar = () => {
                 </div>
 
 
-                <div classname="req-demo-btn" id="#req-demo-btn">
+                <div className="req-demo">
 
-                    <Button className=" default-button btn bg-transparent text-white border border-white" onClick={showModal}>
+                    <button className="bg-transparent text-white border border-white" onClick={showModal}>
                         Request Demo
-                    </Button>
+                    </button>
                     <Modal className="request-demo-model-wrapper" visible={isModalVisible} onCancel={handleCancel} footer={[
 
                     ]}>
@@ -82,14 +92,67 @@ const NavBar = () => {
 
 
                 {/* ----------------mobile nav------------  */}
-                
-                <div>
-                    <div className="container mx-auto border">
-                        <div className="d-flex">
-                            <img src="" alt="logo" />
-                            <button>a</button>
-                        </div>
+
+                <div className="mobile-nav border">
+                    <div className="mobile-nav-content">
+                        <img src={FinalLogo} alt="logo" />
+                        <button className="btn bg-transparent" onClick={showDrawer}>
+                            <img src={NavMenu} alt="" />
+                        </button>
+
+                        <Drawer className="drawer-custom" placement="right" onClose={onCloseDrawer} visible={visible} >
+                            <div className="mobile-nav-links border d-flex flex-column">
+                                <NavLink to="/home" onClick={onCloseDrawer}>
+                                    Home
+                                </NavLink>
+
+                                <NavLink to="/aboutUs" onClick={onCloseDrawer}>
+                                    About Us
+                                </NavLink>
+
+                                <NavLink to="/features" onClick={onCloseDrawer}>
+                                    Features
+                                </NavLink>
+
+                                <NavLink to="/pricing-plan" onClick={onCloseDrawer}>
+                                    Pricing Plan
+                                </NavLink>
+
+                                <NavLink to="/contactUs" onClick={onCloseDrawer}>
+                                    Contact Us
+                                </NavLink>
+                            </div>
+
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+                            <div className="req-demo-mobile text-center" onClick={onCloseDrawer}>
+
+                                <button className="bg-transparent text-white border border-white" onClick={showMobileModal}>
+                                    Request Demo
+                                </button>
+                                <Modal className="request-demo-model-wrapper" visible={isMobileModalVisible} onCancel={handleMobileCancel} footer={[
+
+                                ]}>
+                                    <RequestADemo />
+                                </Modal>
+                            </div>
+
+
+                        </Drawer>
+
                     </div>
+
                 </div>
 
 

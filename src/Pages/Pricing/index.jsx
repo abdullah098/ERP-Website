@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Switch } from 'antd';
 import PricingCard from '../../Components/PricingPlan/PricingCard';
 import PaperPlane from '../../Assets/paperPlane.svg';
 import Brifcase from '../../Assets/brifcase.svg';
 import Rocket from '../../Assets/rocket.svg';
 import { Collapse } from 'antd';
-
+// import Media from "react-media"
 
 const Pricing = () => {
 
+
     // pricing plan data for map
-    const data = [
+    const [data, setData] = React.useState( [
         {
             id: 1,
             img_src: PaperPlane,
@@ -118,11 +119,34 @@ const Pricing = () => {
         },
 
 
+    ])
+
+    const [sortedData, setSortedData] = React.useState([]);
 
 
+    // console.log(windowsSize);
+
+    useEffect(() => {
+        setSortedData(SortDataByKey(data, "recomanded"));
+        // console.log("abc");
+
+    }, [data]);
+
+    const SortDataByKey = (data, key) => {
+        const recomandedData = [];
+        const notRecomandedData = [];
+        for (let i = 0; i < data.length; i++) {
+            if (data[i][key] === true) {
+                recomandedData.push(data[i]);
+            }
+            else {
+                notRecomandedData.push(data[i]);
+            }
+        }
+        return [...recomandedData, ...notRecomandedData];
+    }
 
 
-    ]
 
     //faq collapes data for map
     const colapesData = [
@@ -146,7 +170,7 @@ const Pricing = () => {
 
     const { Panel } = Collapse;
     const callback = (key) => {
-        console.log(key);
+        // console.log(key);
     }
 
     // switch on off
@@ -189,9 +213,21 @@ const Pricing = () => {
                     <div>
                         <div className="container p-0">
                             <div className="d-flex flex-wrap justify-content-center align-items-center">
-                                {data.map((item, index) => (
+                                {/* <Media query="(max-wdith: 968px)" render={() => (
+                                   
+                                    {window.innerWidth < 969 && data.map((item, index) => (<PricingCard data={item} />))}
+                            
+                                )} /> */}
+                                {
+                                   window.innerWidth > 969 ? 
+                                   data.map((item, index) => (
+
                                     <PricingCard data={item} />
-                                ))}
+                                )) :
+                                sortedData.map((item, index) => (
+                                    <PricingCard data={item} />
+                                ))
+                               }
 
                             </div>
                         </div>
